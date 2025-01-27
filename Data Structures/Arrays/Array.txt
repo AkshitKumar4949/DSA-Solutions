@@ -1,0 +1,31 @@
+Array is an non primitive data type which is used to store multiple values of similar data type.
+
+int[] array;  Here arr is declared having named arr , it is getting declared in stack.(Declaration). Declaration happens at compile time.
+
+arr = new int[5]; here object is being created in the heap memory.(Initialisation). Memory allocation happens at run time which is also known as dynamic memory allocation.
+
+In java there may not be continuous memory allocation of array members / Heap objects are not continuous sometimes they can be and sometimes they may not be.  It depends on JVM.
+
+Arrays are heap objects in java. 
+
+In Java, null represents the absence of any value or the lack of an object reference.
+
+By default any reference variable has null type.
+
+Heap is a runtime memory area used by a program to allocate memory for its data dynamically
+
+2D Arrays can be defined as array of arrays 
+
+Java also supports jagged arrays, which are arrays where each row can have a different number of elements
+
+Example of jagged array 
+int[][] array = {
+  {1, 2, 3},  // 1st row: 3 elements
+  {4, 5},      // 2nd row: 2 elements
+  {6, 7, 8, 9} // 3rd row: 4 elements
+};
+
+A jagged array is an array of references to arrays. Each row is a separate array object, and the length of each row can vary. Here's how the memory for your array might be structured:
+
+The main array array holds references to three different arrays (the rows).
+Each of those sub-arrays can have different lengths.
